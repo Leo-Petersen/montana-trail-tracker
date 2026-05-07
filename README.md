@@ -1,4 +1,4 @@
-# Montana Trail Conditions Tracker
+# Trail Conditions Tracker
 
 A community-driven web application that lets hikers report and browse real-time trail conditions across Montana. Built on Google Cloud Platform.
 
@@ -75,7 +75,16 @@ montana-trail-tracker/
 Estimated monthly cost: **$0.00**.
 
 ### Screenshots
-![alt text](<Cloud Run Function.PNG>) ![alt text](<Cloud Run.PNG>) ![alt text](<Cloud Storage.PNG>) ![alt text](Firestore.PNG) ![alt text](<Main page.PNG>)
+Main Page
+![alt text](<Main page.PNG>)
+Cloud Run
+![alt text](<Cloud Run.PNG>) 
+Cloud Storage
+![alt text](<Cloud Storage.PNG>)
+Cloud Run Function
+![alt text](<Cloud Run Function.PNG>) 
+Firestore
+![alt text](Firestore.PNG)
 
 ## Post-Mortem
 
