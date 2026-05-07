@@ -74,6 +74,9 @@ montana-trail-tracker/
 
 Estimated monthly cost: **$0.00**.
 
+### Screenshots
+![alt text](<Cloud Run Function.PNG>) ![alt text](<Cloud Run.PNG>) ![alt text](<Cloud Storage.PNG>) ![alt text](Firestore.PNG) ![alt text](<Main page.PNG>)
+
 ## Post-Mortem
 
 **Problem 1: Eventarc permissions for the Cloud Run Function.**
