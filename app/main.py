@@ -15,7 +15,7 @@ db = firestore.Client(database=DB_NAME)
 storage_client = storage.Client()
 bucket = storage_client.bucket(BUCKET_NAME)
 
-# ── Montana trails (hardcoded for simplicity) ────────────────────────────
+# Montana trails (hardcoded for simplicity)
 TRAILS = [
     {"name": "M Trail (Mount Sentinel)", "lat": 46.8427, "lng": -113.9750},
     {"name": "Palisade Falls", "lat": 45.4631, "lng": -111.1042},
@@ -31,7 +31,6 @@ TRAILS = [
 
 STATUSES = ["Clear", "Muddy", "Snowy", "Flooded", "Overgrown", "Icy"]
 
-# ── HTML template (kept inline per professor's note about polish being secondary) ──
 PAGE_TEMPLATE = """
 <!DOCTYPE html>
 <html lang="en">

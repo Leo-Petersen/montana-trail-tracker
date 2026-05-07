@@ -31,9 +31,9 @@ def generate_thumbnail(cloud_event):
         print(f"Skipping {file_name} -- not in photos/ prefix")
         return
 
-    # avoid infinite loops -- do not process thumbnails
+    # avoid infinite loops, do not process thumbnails
     if file_name.startswith("thumbnails/"):
-        print(f"Skipping {file_name} -- already a thumbnail")
+        print(f"Skipping {file_name} already a thumbnail")
         return
 
     bucket = storage_client.bucket(bucket_name)
@@ -64,7 +64,7 @@ def generate_thumbnail(cloud_event):
     print(f"Uploaded thumbnail to {thumb_blob_name}")
 
     # update the firestore document that references this photo
-    # we stored photo_gcs_path = "photos/abc123.jpg" in the document
+    # stored photo_gcs_path = "photos/abc123.jpg" in the document
     docs = (
         db.collection("reports")
         .where("photo_gcs_path", "==", file_name)
